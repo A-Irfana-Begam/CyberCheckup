@@ -1,4 +1,4 @@
-import { Cookie, Lock, Server, ShieldCheck } from 'lucide-react';
+import { Cookie, Globe, Lock, Server, ShieldCheck } from 'lucide-react';
 
 const FEATURES = [
   {
@@ -20,10 +20,16 @@ const FEATURES = [
       'Review cookie attributes including Secure, HttpOnly, and SameSite to prevent session hijacking.',
   },
   {
-    icon: Server,
-    title: 'Security Configuration',
+    icon: Globe,
+    title: 'Cross-Origin Security',
     description:
-      'Detect information disclosure, misconfigurations, and missing policies that weaken your defenses.',
+      'Check COOP, COEP, and CORP headers that isolate your site and block cross-origin attacks.',
+  },
+  {
+    icon: Server,
+    title: 'Browser Protection',
+    description:
+      'Detect MIME sniffing, clickjacking exposure, referrer leaks, and server information disclosure.',
   },
 ];
 
@@ -37,7 +43,7 @@ export default function FeatureCards() {
             Comprehensive Security Analysis
           </h2>
           <p className="section-description">
-            Web Security Assessment evaluates the key areas that matter most for web application security.
+            Web Security Assessment evaluates five key areas that matter most for web application security.
           </p>
         </div>
 
