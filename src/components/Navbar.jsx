@@ -1,4 +1,4 @@
-import { Shield, Menu, X } from 'lucide-react';
+import { ShieldCheck, Menu, X, Activity } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const NAV_LINKS = [
@@ -34,11 +34,11 @@ export default function Navbar({ onNavigate, activeSection }) {
           }}
         >
           <div className="navbar__logo" aria-hidden="true">
-            <Shield />
+            <ShieldCheck size={20} />
           </div>
           <div className="navbar__brand-text">
-            <div className="navbar__name">Web Security Assessment</div>
-            <div className="navbar__tagline">Web Security Health Scanner</div>
+            <div className="navbar__name">CyberCheckup</div>
+            <div className="navbar__tagline">Free Security Assessment</div>
           </div>
         </a>
 
@@ -59,9 +59,10 @@ export default function Navbar({ onNavigate, activeSection }) {
         </nav>
 
         <div className="navbar__actions">
-          <div className="navbar__status" role="status" aria-label="Security First status active">
+          <div className="navbar__status" role="status" aria-label="System operational">
+            <Activity size={14} aria-hidden="true" />
             <span className="navbar__status-dot" aria-hidden="true" />
-            Security First
+            <span className="navbar__status-text">System Active</span>
           </div>
 
           <button
@@ -99,7 +100,7 @@ export default function Navbar({ onNavigate, activeSection }) {
         <div className="navbar__mobile-status">
           <div className="navbar__status" role="status">
             <span className="navbar__status-dot" aria-hidden="true" />
-            Security First
+            System Active
           </div>
         </div>
       </nav>
