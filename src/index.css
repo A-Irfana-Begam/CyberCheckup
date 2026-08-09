@@ -1,0 +1,12 @@
+@import './styles/base.css';
+@import './styles/sparkle.css';
+@import './styles/navbar.css';
+@import './styles/hero.css';
+@import './styles/sections.css';
+@import './styles/results.css';
+
+main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
